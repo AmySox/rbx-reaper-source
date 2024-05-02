@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "outDir": "./dist/",
+    "rootDir": "./src/",
+    "downlevelIteration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "typeRoots": ["@types", "./node_modules/@types"],
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "baseUrl": "src",
+    "paths": {
+      "@keys": ["keys/index"],
+      "@assets/*": ["assets/*"],
+      "@models/*": ["models/*"],
+      "@services/*": ["services/*"],
+      "@utils": ["utils/index"],
+      "@middlewares": ["routes/middlewares/index"],
+      "@routes/*": ["routes/api/*"]
+    },
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
+}
